@@ -1,16 +1,21 @@
 // @flow
 import React from 'react';
-import {
-    BackGround
-} from './AuthContainerStyle';
+import styled from 'styled-components';
+import oc from 'open-color';
 
-import Signin from 'components/auth/signin';
+import { Route } from 'react-router-dom';
+
+import Signin from 'components/auth/Signin';
+
+const BackGround = styled.div`
+    height: 100%;
+`
 
 class AuthContainer extends React.Component {
     render(){
         return (
             <BackGround>
-                <Signin />
+                <Route path="/auth/signin" component={Signin}/>
             </BackGround>
         )
     }
