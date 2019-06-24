@@ -54,6 +54,10 @@ const AcceptButton = styled.button`
 
 `
 
+const NewPost = styled.button`
+    
+`
+
 class PostCard extends Component {
 
     render() {
