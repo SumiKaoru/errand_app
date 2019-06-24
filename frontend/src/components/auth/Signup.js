@@ -5,6 +5,7 @@ import oc from 'open-color';
 
 import { Link } from 'react-router-dom';
 
+
 const Form = styled.form`
     display: flex;
     flex-direction: column;
@@ -16,17 +17,17 @@ const Input = styled.input`
 
 const Button = styled.button``
 
-class Signin extends React.Component {
+class Signup extends React.Component {
     render(){
         return (
             <Form>
                 <Input />
                 <Input />
-                <Button>login</Button>
-                <Link to="/auth/signup" >signup</Link>
+                <Button>signup</Button>
+                <Link to="/auth/signin">signin</Link>
             </Form>
         )
     }
 }
 
-export default Signin;
+export default Signup;
